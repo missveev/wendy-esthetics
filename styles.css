@@ -866,39 +866,44 @@ footer {
   color: #6d655f;
 }
 
-@media(max-width:560px) {
-  .hero {
-    padding-top: 56px;
-  }
+@media(max-width:560px){
 
-  .hero-art {
-    display: block;
-    height: auto;
-    margin-bottom: 48px;
-  }
-
-  .hero-main {
+  .hero-art{
     position: relative;
-    width: 100%;
-    height: 430px;
-    right: auto;
-    top: auto;
-    border-radius: 180px 180px 18px 18px;
+    height: 620px;
+    margin-bottom: 40px;
   }
 
-  .hero-small.top,
-  .hero-small.bottom,
-  .round-badge {
-    display: none;
+  .hero-main{
+    position:absolute;
+    right:0;
+    top:0;
+    width:78%;
+    height:72%;
   }
 
-  .hero-copy {
-    width: 100%;
+  .hero-small.top{
+    position:absolute;
+    left:0;
+    top:14%;
+    width:34%;
+    height:20%;
   }
 
-  .hero h1 {
-    font-size: clamp(72px, 24vw, 110px);
-    line-height: .78;
+  .hero-small.bottom{
+    position:absolute;
+    left:8%;
+    bottom:4%;
+    width:42%;
+    height:26%;
+  }
+
+  .round-badge{
+    width:80px;
+    height:80px;
+    left:42%;
+    top:48%;
+    transform:none;
   }
 }
 
